@@ -24,5 +24,4 @@ Route.group(() => {
     Route.delete('proyectos/:id', 'ProyectoController.destroy').middleware('auth');
     Route.patch('proyectos/:id', 'ProyectoController.update').middleware('auth');
 
-
 }).prefix('api/v1/');
