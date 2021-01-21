@@ -17,7 +17,7 @@ module.exports = {
   | interacting with SQL databases.
   |
   */
-  connection: Env.get('DB_CONNECTION', 'sqlite'),
+  connection: Env.get('DB_CONNECTION', 'mysql'),
 
   /*
   |--------------------------------------------------------------------------
@@ -30,14 +30,14 @@ module.exports = {
   | npm i --save sqlite3
   |
   */
-  sqlite: {
-    client: 'sqlite3',
-    connection: {
-      filename: Helpers.databasePath(`${Env.get('DB_DATABASE', 'development')}.sqlite`)
-    },
-    useNullAsDefault: true,
-    debug: Env.get('DB_DEBUG', false)
-  },
+  // sqlite: {
+  //   client: 'sqlite3',
+  //   connection: {
+  //     filename: Helpers.databasePath(`${Env.get('DB_DATABASE', 'development')}.sqlite`)
+  //   },
+  //   useNullAsDefault: true,
+  //   debug: Env.get('DB_DEBUG', false)
+  // },
 
   /*
   |--------------------------------------------------------------------------
