@@ -10,7 +10,7 @@ const CLEARDB_DATABASE_URL = new Url(Env.get('CLEARDB_DATABASE_URL'))
 module.exports = {
   /*
   |--------------------------------------------------------------------------
-  | Default Connection
+  | Default Connection     Add config db
   |--------------------------------------------------------------------------
   |
   | Connection defines the default connection settings to be used while
