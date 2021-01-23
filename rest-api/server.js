@@ -17,8 +17,8 @@
 |     Make sure to pass a relative path from the project root.
 */
 
-//const { Ignitor } = require('@adonisjs/ignitor')
-const API_PORT = process.env.PORT || 3001
+const { Ignitor } = require('@adonisjs/ignitor')
+
 new Ignitor(require('@adonisjs/fold'))
   .appRoot(__dirname)
   .fireHttpServer()
